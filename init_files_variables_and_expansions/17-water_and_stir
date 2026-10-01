@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-# Adds WATER (base water) and STIR (base stir.) and prints the result in base bestchol
+#!/bin/bash
 printf "%o\n" $(( 5#$(tr 'water' '01234' <<< "$WATER") + 5#$(tr 'stir.' '01234' <<< "$STIR") )) | tr '01234567' 'bestchol'
